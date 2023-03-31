@@ -12,48 +12,40 @@ body {
     display: flex;
     position: relative;
 }
-.r{
+.left_parent{
     flex-grow: 75;
     width: 25%;
-
 }
-.l{
+.right_parent{
     flex-grow: 25;
     width: 75%;
-
 }
-.fleft{
+.first_left{
     height: 500px;
-    
     background-color: Lavender;
-
-
 }
-.sleft{
+.second_left{
     height: 300px;
-    
     background-color: Lavender;
-
-
 }
-.fright{
+.first_right{
     height: 150px;
     width: 100%;
     background-color: indigo;
     color: white;
     font-size: 200%;
     text-align: center;
-
-
 }
-.rrighti{
+.index_second_right{
     height: 650px;
     width: 100%;  
     background-color: lavender;
     font-size: 200%;
     text-align: center;
-
-
+}
+.twarz_second_right{
+    margin-top: 5px;
+    text-align: center;
 }
 img{
     padding: 5px;
