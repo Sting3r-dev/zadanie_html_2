@@ -7,7 +7,8 @@
      <meta name="keywords" content="">
      <meta name="author" content="">
      <link rel="stylesheet" href="style.css">
-  </head>
+     <script src="index.js"></script>
+    </head>
   <body>
 
   <main>
@@ -16,7 +17,12 @@
     </section>
     <div id="content">
     <section id="text-editor">
-      <section id="file-list"></section>
+      <section id="file-list">
+        
+        <button id='file1' class="file-list-item" onclick="change_color()">index.html</button>
+        <button id='file2' class="file-list-item" onclick="change_color()">style.css</button>
+        <button id='file3' class="file-list-item" onclick="change_color()">index.js</button>
+      </section>
       <section id="file-tree"></section>
     </section>
     <section id="terminal"></section>
