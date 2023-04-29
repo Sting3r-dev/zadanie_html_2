@@ -22,13 +22,36 @@ footer{
     flex: 22.5;
     height: 100%;
     background-color: #f3f3f3;
+    display: flex;
 }
 #sidebar-selector{
-    float: left;
+    display: inline-block;
     height: 100%;
     width: 48px;
     background-color: #2c2c2c;
 }
+#sidebar-file-manager{
+    display:table;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.sidebar-icons{
+    
+    height: 100%;
+    width: 100%;
+    display:table;
+    
+}
+.sidebar-icons > li{
+    margin-top: 15px;
+    margin-left: 0 !important;
+    text-align: center;
+    height: 32px;
+    width: 42px;
+}
+
 #content{
     flex: 77.5;
     height: 100%;
@@ -49,15 +72,16 @@ footer{
 }
 #file-list{
     width: 100%;
-    height: 32px;
+    height: 36px;
     background-color: #f3f3f3;
     font-family: "Segoe UI", Arial, sans-serif;
+
 }
 #file-tree{
     width: 100%;
     height: 22px;
     background-color: #ffffff;
-    box-shadow: 0px 2px 1px #f1f1f1;
+
     font-family: "Segoe UI", Arial, sans-serif;
 }
 .file-list-item{
@@ -65,10 +89,11 @@ footer{
     width: auto;
     min-width: 100px;
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 32px;
     float: left;
     border: none;
     background-color:#ececec;
+    font-size: 13px;
 }
 #file-tree a{
     color: #b1b1b1 !important;
@@ -77,7 +102,6 @@ footer{
 }
 a{
     text-decoration: none;
-    color: #000
 }
 #file-tree a:hover{
     color: #424242;
@@ -94,26 +118,51 @@ textarea {
     border: none;
     overflow: auto;
     outline: none;
-    background-color: red;
+    height: 87%;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    height: 38px;
+    height: 32px;
     display: flex;
     align-items: center;
     font-family: system-ui,sans-serif;
-    
   }
 li {
-    padding-left: 20px;
+    margin-left: 20px;
     display: inline-block;
     font-size: 11px;
     text-transform: uppercase;
+    width: fit-content;
+}
+li > a{
+    color: #7F7F7F !important;
+}
+.seperator{
+    width: 100%;
+    height: 2px;
+    background-color: #f1f1f1;
+
+}
+ul > span{
+    width: 100%;
+}
+
+.terminal-hover > li{
+    float: right;
+    margin-right: 10px !important;
+    margin-left: 0px  !important;
+}
+
+.terminal-hover > li:hover{
+    background-color: red;
     
 }
-li a{
-    color: #7F7F7F !important;
+.file-manager{
+    background-color: red;
+    width: 100%;
+    float: right;
 }

@@ -13,16 +13,37 @@
 
   <main>
     <section id="sidebar">
-      <section id="sidebar-selector"></section>
+
+
+      <section id="sidebar-selector">
+        <ul class="sidebar-icons">
+          <li><img src='icons/dark/menu.svg' height="18px"></li>
+          <li><img src='icons/dark/files.svg' height="25px"></li>
+          <li><img src='icons/dark/search.svg' height="25px"></li>
+          <li><img src='icons/dark/source-control.svg' height="25px"></li>
+          <li><img src='icons/dark/debug-alt.svg' height="25px"></li>
+          <li><img src='icons/dark/extensions.svg' height="25px"></li>
+          <li><img src='icons/dark/github-inverted.svg' height="25px"></li>
+
+            <li><img src='icons/dark/account.svg' height="25px"></li>
+            <li><img src='icons/dark/gear.svg' height="25px"></li>
+
+        </ul>
+
+      </section>
+      <section id="sidebar-file-manager">
+        <div id=''>1</div>
+        <div id=''>2</div>
+      </section>
     </section>
     <div id="content">
     <section id="text-editor">
       <section id="file-list">
         
-        <button id='file1' class="file-list-item" onclick="change_color()">index.html</button>
-        <button id='file2' class="file-list-item" onclick="change_color()">style.css</button>
-        <button id='file3' class="file-list-item" onclick="change_color()">index.js</button>
-        <button id='file4' class="file-list-item" onclick="change_color()">Rozszerzenie: Live Server</button>
+        <button id='file1' class="file-list-item" onclick="change_color()"><img src='icons/lang-icons/file_type_html.svg' height="16px"> index.html <b>M</b> </button>
+        <button id='file2' class="file-list-item" onclick="change_color()"><img src='icons/lang-icons/file_type_css.svg' height="16px"> style.css <b>M</b></button>
+        <button id='file3' class="file-list-item" onclick="change_color()"><img src='icons/lang-icons/file_type_js.svg' height="16px"> index.js</button>
+        <button id='file4' class="file-list-item" onclick="change_color()"><img src='icons/light/list-selection.svg' height="16px"> Extension: Live Server</button>
       </section>
       <section id="file-tree">
         <div class="file-tree-links">
@@ -40,19 +61,33 @@
         <textarea id="text-area" name="text-area">a</textarea>
       </forum>
     </section>
+    <div class="seperator"></div>
     <section id="terminal">
       <div class="terminal-items">
         <ul>
           <li><a href='#'>Problems</a></li>
           <li><a href='#'>Output</a></li>
-          <li><a href='#'>Debug Console</a></li>
+          <li><a href='#'>Debug_</span>Console</a></li>
           <li><a href='#'>Terminal</a></li>
           <li><a href='#'>Ports</a></li>
           <li><a href='#'>Comments</a></li>
+          <span>
+          <div class="terminal-hover">
+            <li><a href='#'><img src='/icons/light/close.svg' height="13px"></a></li>
+            <li><a href='#'><img src='/icons/light/chevron-up.svg' height="13px"></a></li>
+            <li><a href='#'><img src='/icons/light/more.svg' height="13px"></a></li>
+            <li><a href='#'><img src='/icons/light/trash.svg' height="13px"></a></li>
+            <li><a href='#'><img src='/icons/light/split-horizontal.svg' height="13px"></a></li>
+            <li><a href='#'><img src='/icons/light/chevron-down.svg' height="13px"></a></li>
+            <li><a href='#'><img src='/icons/light/add.svg' height="13px"></a></li>
+            <li><a href='#'><img src='/icons/light/terminal.svg' height="13px"> bash</a></li>
+          </div>
+          </span>
         </ul>
+
       </div>
       <forum>
-        <textarea id="text-area" name="text-area">a</textarea>
+        <textarea id="text-area" name="text-area" rows="80"></textarea>
       </forum>
     </section>
     </div>
