@@ -2,14 +2,12 @@
 <html lang="pl">
   <head>
      <meta charset="utf-8">
-     <title>Usługi kosmetyczne</title>
+     <title>index.html - zadanie_html_2 [codespaces] - Visual Studio Code</title>
+     <link rel="icon" href="/icons/dark/github-inverted.svg">
      <meta name="description" content="O">
-     <meta name="keywords" content="">
-     <meta name="author" content="">
+     <meta name="author" content="Pawel Walega">
      <link rel="stylesheet" href="style.css">
      <script src="index.js"></script>
-     <script language="javascript" type="text/javascript" src="editarea_0_8_2/edit_area/edit_area_full.js"></script>
-
     </head>
   <body>
 
@@ -45,9 +43,12 @@
               <label class="closer" for="dropclose"><img src='icons/light/chevron-down.svg' height="12px"> Zadanie_html_2 [Codespace]</label>
               <ul class="dropdown-items">
                 <li><a href="#"><img src='icons/light/chevron-right.svg' height="11px"> icons</a></li>
-                <li><a href="#"><img src='icons/lang-icons/file_type_html.svg' height="11px"> <span>index.html</span><b>M</b></a></li>
+                <li><a href="#" class="added"><img src='icons/light/chevron-right.svg' height="11px"> node_modules<b class="added"><img src='icons/light/circle-filled.svg' height="14px"></b></a></li>
+                <li><a href="#" class="moded"><img src='icons/lang-icons/file_type_html.svg' height="11px"> <span>index.html</span><b>M</b></a></li>
                 <li><a href="#"><img src='icons/lang-icons/file_type_js.svg' height="11px"> index.js</a></li>
-                <li><a href="#"><img src='icons/lang-icons/file_type_css.svg' height="11px"> <span>style.css</span><b>M</b></a></li>
+                <li><a href="#" class="added"><img src='icons/light/json.svg' height="11px"> package-lock.json<b class="added">U</b></a></li>
+                <li><a href="#" class="added"><img src='icons/light/json.svg' height="11px"> package.json<b class="added">U</b></a></li>
+                <li><a href="#" class="moded"><img src='icons/lang-icons/file_type_css.svg' height="11px"> <span>style.css</span><b>M</b></a></li>
               </ul>
             </li>
             <hr>
@@ -88,10 +89,18 @@
     <section id="text-editor">
       <section id="file-list">
         
-        <button id='file1' class="file-list-item" onclick="change_color()"><img src='icons/lang-icons/file_type_html.svg' height="16px"> index.html <b>M</b> </button>
-        <button id='file2' class="file-list-item" onclick="change_color()"><img src='icons/lang-icons/file_type_css.svg' height="16px"> style.css <b>M</b></button>
-        <button id='file3' class="file-list-item" onclick="change_color()"><img src='icons/lang-icons/file_type_js.svg' height="16px"> index.js</button>
-        <button id='file4' class="file-list-item" onclick="change_color()"><img src='icons/light/three-bars.svg' height="16px"> Extension: Live Server</button>
+        <button id='file1' class="file-list-item" onclick="show(this)"><img src='icons/lang-icons/file_type_html.svg' height="16px"> index.html <b>M</b> </button>
+        <button id='file2' class="file-list-item" onclick="show(this)"><img src='icons/lang-icons/file_type_css.svg' height="16px"> style.css <b>M</b></button>
+        <button id='file3' class="file-list-item" onclick="show(this)"><img src='icons/lang-icons/file_type_js.svg' height="16px"> index.js</button>
+        <button id='file4' class="file-list-item" onclick="show(this)"><img src='icons/light/three-bars.svg' height="16px"> Extension: Live Server</button>
+
+        <span style="float: right; margin-right: 10px;">
+          <ul>
+            <li><a href="#" class="icon-hover"><img src='/icons/light/git-compare.svg' height="15px"></a></li>
+            <li><a href="#" class="icon-hover"><img src='/icons/light/split-horizontal.svg' height="15px"></a></li>
+            <li><a href="#" class="icon-hover"><img src='/icons/light/more.svg' height="15px"></a></li>
+          </ul>
+        </span>
       </section>
       <section id="file-tree">
         <div class="file-tree-links">
@@ -105,10 +114,9 @@
           <a href="#"><img src='/icons/light/symbol-field.svg' height="13px"> a</a>
         </div>
       </section>
-      
-        <textarea id="editor-text-area" name="text-area" spellcheck="false">test</textarea>
 
-    </section>
+        <textarea id="editor-text-area" name="text-area" spellcheck="false">test</textarea>
+        
     <div class="seperator"></div>
     <section id="terminal">
       <div class="terminal-items">
@@ -134,7 +142,7 @@
 
       </div>
       <forum>
-        <textarea id="terminal-text-area" name="text-area" rows="80" spellcheck="false">@Sting3r-dev ➜ /workspaces/zadanie_html_2 (main) $ </textarea>
+        <textarea id="terminal-text-area" name="text-area" rows="100" spellcheck="false">@Sting3r-dev ➜ /workspaces/zadanie_html_2 (main) $ npm init</textarea>
       </forum>
     </section>
     </div>

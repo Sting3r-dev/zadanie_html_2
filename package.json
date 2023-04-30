@@ -1,0 +1,29 @@
+{
+  "name": "zadanie_html_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sting3r-dev/zadanie_html_2.git"
+  },
+  "author": "Sting3r",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sting3r-dev/zadanie_html_2/issues"
+  },
+  "homepage": "https://github.com/Sting3r-dev/zadanie_html_2#readme",
+  "dependencies": {
+    "codemirror": "^6.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.18"
+  },
+  "index": {},
+  "package-lock": {},
+  "package": {},
+  "style": {}
+}
