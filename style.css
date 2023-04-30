@@ -11,13 +11,7 @@ main{
  display: flex;
  flex-direction: row;
 }
-footer{
-    width: 100%;
-    height: 22px;
-    background-color: #007ACC;
-    position: absolute;
-    bottom: 0;
-}
+
 #sidebar{
     flex: 22.5;
     height: 100%;
@@ -34,24 +28,38 @@ footer{
     display:table;
     width: 100%;
     height: 100%;
-    
 }
 
 .sidebar-icons{
-    
     height: 100%;
     width: 100%;
     display:table;
-    
+    position: relative;
+}
+.sidebar-icons > div{
+    position: absolute;
+    bottom: 0;
+    height: fit-content;
+    margin-bottom: 22px;
+}
+.sidebar-icons > div > li{
+    width: 100%;
+    margin-left: 0 !important;
+    text-align: center;
+    margin-bottom: 15px;
 }
 .sidebar-icons > li{
     margin-top: 15px;
     margin-left: 0 !important;
     text-align: center;
-    height: 32px;
-    width: 42px;
+    height: fit-content;
+    width: 100%;
+    
 }
-
+.sidebar-icons > li:hover,
+.sidebar-icons > .float-bottom > li:hover{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(0%) hue-rotate(272deg) brightness(101%) contrast(100%);
+}
 #content{
     flex: 77.5;
     height: 100%;
@@ -81,9 +89,9 @@ footer{
     width: 100%;
     height: 22px;
     background-color: #ffffff;
-
     font-family: "Segoe UI", Arial, sans-serif;
 }
+
 .file-list-item{
     height: inherit;
     width: auto;
@@ -96,12 +104,13 @@ footer{
     font-size: 13px;
 }
 #file-tree a{
-    color: #b1b1b1 !important;
+    color: #b1b1b1;
     font-size: 13px;
     text-align: center;
 }
 a{
     text-decoration: none;
+    color: #7F7F7F;
 }
 #file-tree a:hover{
     color: #424242;
@@ -138,9 +147,7 @@ li {
     text-transform: uppercase;
     width: fit-content;
 }
-li > a{
-    color: #7F7F7F !important;
-}
+
 .seperator{
     width: 100%;
     height: 2px;
@@ -155,14 +162,150 @@ ul > span{
     float: right;
     margin-right: 10px !important;
     margin-left: 0px  !important;
+    border-radius: 5px;
+    padding: 3px;
 }
-
+.terminal-hover > li > a > span{
+    height: 100%;
+    padding: 3px;
+    border-radius: 5px;
+}
 .terminal-hover > li:hover{
-    background-color: red;
-    
+    background-color: #ebebeb;
+}
+.terminal-hover > li > a > span:hover{
+    background-color: #d1d1d1;
+}
+.terminal-items > ul > li > a:hover{
+    color: #424242;
 }
 .file-manager{
-    background-color: red;
     width: 100%;
     float: right;
+}
+#sidebar-file-manager{
+    height: 100%;
+}
+
+#file-list > ul{
+
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+#file-list > ul > li{
+    display: list-item;
+    margin-left: 0 !important;
+    width: 100%;
+}
+.dropdown-file-menu ul,
+.dropdown-file-menu input,
+.dropdown-file-menu .closer,
+.dropdown-file-menu input:checked~.opener{
+    display: none;
+    
+}
+.dropdown-file-menu input:checked~ul,
+.dropdown-file-menu input:checked~.closer{
+    display: block;
+    
+    
+}
+.dropdown-file-menu label{
+    font-weight: 700;
+    color: #616161;
+    font-size: 11px;
+    cursor: pointer;
+    width:fit-content;
+}
+.dropdown-items{
+    height:min-content;
+    color:#000;
+    font-size: 11px;
+}
+.dropdown-items > li:hover{
+    background-color: #E8E8E8;
+}
+.dropdown-file-menu{
+    display: table;
+    font-family: system-ui,Ubuntu,Droid Sans,sans-serif;
+    
+}
+.dropdown-items > li{
+    padding-top: 3px;
+    display: list-item;
+    width: 100%;
+
+}
+.dropdown-items > li > a{
+    font-family: system-ui,Ubuntu,Droid Sans,sans-serif;
+    color: #787878;
+    text-transform: none;
+    font-size: 13px;
+    
+}
+
+.dropdown-items > li > a > .timeline-span{
+    color: #b1b1b1 !important;
+    float: right;
+    margin-right: 15%;
+}
+.dropdown-items > li > a > b{
+    font-family: system-ui,Ubuntu,Droid Sans,sans-serif;
+    color:#ae8e5b;
+    float: right;
+    margin-right: 15%;
+    font-size: 13px;
+}
+hr{
+    border: none;
+    height: 1px;
+    color: #D7D7D7; 
+    background-color: #D7D7D7;
+}
+#explore-and-more{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: system-ui,Ubuntu,Droid Sans,sans-serif;
+    color: #787878;
+    cursor:default;
+}
+#explore-and-more > span{
+    float: right;
+    padding-right: 15px;
+}
+footer{
+    width: 100%;
+    height: 22px;
+    background-color: #007ACC;
+    position: absolute;
+    bottom: 0;
+    
+}
+#footer-list-left{
+    float: left;
+    width: fit-content;
+    height: 22px;
+    cursor: pointer;
+    
+}
+#footer-list-left > li > span{
+    font-size: 12px;
+}
+#footer-list-right{
+    float: right;
+    width: fit-content;
+    height: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+#footer-list-right > li,
+#footer-list-left > li{
+    text-transform: none;
+    color: #fff !important;
+    font-size: 11px;
 }

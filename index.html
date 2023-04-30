@@ -8,6 +8,8 @@
      <meta name="author" content="">
      <link rel="stylesheet" href="style.css">
      <script src="index.js"></script>
+     <script language="javascript" type="text/javascript" src="editarea_0_8_2/edit_area/edit_area_full.js"></script>
+
     </head>
   <body>
 
@@ -17,23 +19,69 @@
 
       <section id="sidebar-selector">
         <ul class="sidebar-icons">
-          <li><img src='icons/dark/menu.svg' height="18px"></li>
-          <li><img src='icons/dark/files.svg' height="25px"></li>
-          <li><img src='icons/dark/search.svg' height="25px"></li>
-          <li><img src='icons/dark/source-control.svg' height="25px"></li>
-          <li><img src='icons/dark/debug-alt.svg' height="25px"></li>
-          <li><img src='icons/dark/extensions.svg' height="25px"></li>
-          <li><img src='icons/dark/github-inverted.svg' height="25px"></li>
+          <li><a href='#'><img src='icons/dark/menu.svg' height="18px"></a></li>
+          <li><a href='#'><img src='icons/dark/files.svg' height="25px"></a></li>
+          <li><a href='#'><img src='icons/dark/search.svg' height="25px"></a></li>
+          <li><a href='#'><img src='icons/dark/source-control.svg' height="25px"></a></li>
+          <li><a href='#'><img src='icons/dark/debug-alt.svg' height="25px"></a></li>
+          <li><a href='#'><img src='icons/dark/extensions.svg' height="25px"></a></li>
+          <li><a href='#'><img src='icons/dark/github-inverted.svg' height="25px"></a></li>
+          <div class="float-bottom">
 
-            <li><img src='icons/dark/account.svg' height="25px"></li>
-            <li><img src='icons/dark/gear.svg' height="25px"></li>
+            <li><a href='#'><img src='icons/dark/account.svg' height="25px"></a></li>
+            <li><a href='#'><img src='icons/dark/gear.svg' height="25px"></a></li>
 
+          </div>
         </ul>
 
       </section>
       <section id="sidebar-file-manager">
-        <div id=''>1</div>
-        <div id=''>2</div>
+        <div id='explore-and-more'>Explorer<span><img src='icons/light/more.svg' height="18px"></span></div>
+        <div id='file-list'>
+          <ul class="dropdown-file-menu">
+            <li>
+              <input type="radio" name="menuopt" id="drop1" />
+              <label class="opener" for="drop1"><img src='icons/light/chevron-right.svg' height="12px"> Zadanie_html_2 [Codespace]</label>
+              <label class="closer" for="dropclose"><img src='icons/light/chevron-down.svg' height="12px"> Zadanie_html_2 [Codespace]</label>
+              <ul class="dropdown-items">
+                <li><a href="#"><img src='icons/light/chevron-right.svg' height="11px"> icons</a></li>
+                <li><a href="#"><img src='icons/lang-icons/file_type_html.svg' height="11px"> <span>index.html</span><b>M</b></a></li>
+                <li><a href="#"><img src='icons/lang-icons/file_type_js.svg' height="11px"> index.js</a></li>
+                <li><a href="#"><img src='icons/lang-icons/file_type_css.svg' height="11px"> <span>style.css</span><b>M</b></a></li>
+              </ul>
+            </li>
+            <hr>
+            <li>
+              <input type="radio" name="menuopt" id="drop2" />
+              <label class="opener" for="drop2"><img src='icons/light/chevron-right.svg' height="12px"> Outline</label>
+              <label class="closer" for="dropclose"><img src='icons/light/chevron-down.svg' height="12px"> Outline</label>
+              <ul class="dropdown-items">
+                <li><a href="#"><img src='icons/light/chevron-down.svg' height="11px" > <img src='/icons/light/symbol-field.svg' height="13px"> html</a></li>
+                <li><a href="#"><img src='icons/light/chevron-right.svg' height="11px"> <img src='/icons/light/symbol-field.svg' height="13px"> head</a></li>
+                <li><a href="#"><img src='icons/light/chevron-right.svg' height="11px"> <img src='/icons/light/symbol-field.svg' height="13px"> body</a></li>
+              </ul>
+            </li>
+            <hr>
+            <li>
+              <input type="radio" name="menuopt" id="drop3" />
+              <label class="opener" for="drop3"><img src='icons/light/chevron-right.svg' height="12px"> Timeline</label>
+              <label class="closer" for="dropclose"><img src='icons/light/chevron-down.svg' height="12px"> Timeline</label>
+              <ul class="dropdown-items">
+                <li><a href="#"><img src='/icons/light/circle-outline.svg' height="15px"> File Saved<span class="timeline-span">now</span></a></li>
+                <li><a href="#"><img src='/icons/light/circle-outline.svg' height="15px"> File Saved<span class="timeline-span">3 min</span></a></li>
+                <li><a href="#"><img src='/icons/light/circle-outline.svg' height="15px"> File Saved<span class="timeline-span">12 min</span></a></li>
+                <li><a href="#"><img src='/icons/light/circle-outline.svg' height="15px"> File Saved<span class="timeline-span">41 min</span></a></li>
+                <li><a href="#"><img src='/icons/light/circle-outline.svg' height="15px"> File Saved<span class="timeline-span">1 hr</span></a></li>
+                <li><a href="#"><img src='/icons/light/git-commit.svg' height="15px"> commit and add Sting3r-dev<span class="timeline-span">1 day</span></a></li>
+                <li><a href="#"><img src='/icons/light/git-commit.svg' height="15px"> icons upload Sting3r-dev<span class="timeline-span">2 days</span></a></li>
+                <li><a href="#"><img src='/icons/light/circle-outline.svg' height="15px"> File Saved<span>2 days</span class="timeline-span"></a></li>
+                <li><a href="#"><img src='/icons/light/git-commit.svg' height="15px"> Add files via upload Sting3r-dev<span class="timeline-span">1 mo</span></a></li>
+                
+              </ul>
+              <input type="radio" name="menuopt" id="dropclose" />
+            </li>
+          </ul>
+        </div>
       </section>
     </section>
     <div id="content">
@@ -43,7 +91,7 @@
         <button id='file1' class="file-list-item" onclick="change_color()"><img src='icons/lang-icons/file_type_html.svg' height="16px"> index.html <b>M</b> </button>
         <button id='file2' class="file-list-item" onclick="change_color()"><img src='icons/lang-icons/file_type_css.svg' height="16px"> style.css <b>M</b></button>
         <button id='file3' class="file-list-item" onclick="change_color()"><img src='icons/lang-icons/file_type_js.svg' height="16px"> index.js</button>
-        <button id='file4' class="file-list-item" onclick="change_color()"><img src='icons/light/list-selection.svg' height="16px"> Extension: Live Server</button>
+        <button id='file4' class="file-list-item" onclick="change_color()"><img src='icons/light/three-bars.svg' height="16px"> Extension: Live Server</button>
       </section>
       <section id="file-tree">
         <div class="file-tree-links">
@@ -57,9 +105,9 @@
           <a href="#"><img src='/icons/light/symbol-field.svg' height="13px"> a</a>
         </div>
       </section>
-      <forum>
-        <textarea id="text-area" name="text-area">a</textarea>
-      </forum>
+      
+        <textarea id="editor-text-area" name="text-area" spellcheck="false">test</textarea>
+
     </section>
     <div class="seperator"></div>
     <section id="terminal">
@@ -76,10 +124,9 @@
             <li><a href='#'><img src='/icons/light/close.svg' height="13px"></a></li>
             <li><a href='#'><img src='/icons/light/chevron-up.svg' height="13px"></a></li>
             <li><a href='#'><img src='/icons/light/more.svg' height="13px"></a></li>
-            <li><a href='#'><img src='/icons/light/trash.svg' height="13px"></a></li>
+            <li><a href='#'><img src='/icons/light/window.svg' height="13px"></a></li>
             <li><a href='#'><img src='/icons/light/split-horizontal.svg' height="13px"></a></li>
-            <li><a href='#'><img src='/icons/light/chevron-down.svg' height="13px"></a></li>
-            <li><a href='#'><img src='/icons/light/add.svg' height="13px"></a></li>
+            <li><a href='#'><img src='/icons/light/add.svg' height="13px"> <span><img src='/icons/light/chevron-down.svg' height="13px"></span></a></li>
             <li><a href='#'><img src='/icons/light/terminal.svg' height="13px"> bash</a></li>
           </div>
           </span>
@@ -87,14 +134,31 @@
 
       </div>
       <forum>
-        <textarea id="text-area" name="text-area" rows="80"></textarea>
+        <textarea id="terminal-text-area" name="text-area" rows="80" spellcheck="false">@Sting3r-dev ➜ /workspaces/zadanie_html_2 (main) $ </textarea>
       </forum>
     </section>
     </div>
   </main>
 
   <footer>
-
+    <ul id="footer-list-left">
+      <li><span>Codespaces</span></li>
+      <li><img src='/icons/dark/source-control.svg' height="14px"> main*</li>
+      <li><img src='/icons/dark/refresh.svg' height="14px"></li>
+      <li><img src='/icons/dark/error.svg' height="14px"> 0 <img src='/icons/dark/warning.svg' height="14px"> 0</li>
+      <li><img src='/icons/dark/radio-tower.svg' height="14px"> 1</li>
+    </ul>
+    <ul id="footer-list-right">
+      <li>Ln 146, Col 25</li>
+      <li>Spaces: 2</li>
+      <li>UTF-8</li>
+      <li>CRLF</li>
+      <li>HTML</li>
+      <li><img src='/icons/dark/blocked.svg' height="14px"> Port : 5500</li>
+      <li>Layout: us</li>
+      <li><img src='/icons/dark/comment-discussion.svg' height="14px"></li>
+      <li><img src='/icons/dark/bell.svg' height="14px"></li>
+    </ul>
   </footer>
   </body>
 </html>
